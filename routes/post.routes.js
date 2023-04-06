@@ -19,7 +19,7 @@ postRouter.get("/",async(req,res)=>{
 })
 
 
-postRouter.post("/create",async(req,res)=>{
+postRouter.post("/appointments",async(req,res)=>{
     const payload=req.body
     try{
         const new_post=new PostModel(payload)
